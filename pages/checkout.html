@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/shop-icon-32.png" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Checkout - SHOP</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="header-top">
+        <button type="button" class="hamburger-menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </button>
+
+        <a class="brand-title" href="../index.html" aria-label="SHOP Home">SHOP</a>
+
+        <a class="cart-link" href="cart.html" aria-label="Shopping cart: 2 items">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+            />
+          </svg>
+          <span class="cart-count" aria-hidden="true">2</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="checkout-page">
+      <div class="checkout-intro">
+        <h1>Checkout</h1>
+        <p>Shop is a demo app - form data will not be sent</p>
+      </div>
+
+      <form class="checkout-form">
+        <div class="checkout-left">
+          <section class="checkout-section account-section">
+            <h2>Account Information</h2>
+
+            <div class="checkout-field email-field">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email"
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="checkout-field">
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="Phone Number"
+                autocomplete="tel"
+              />
+            </div>
+          </section>
+
+          <section class="checkout-section shipping-section">
+            <h2>Shipping Address</h2>
+
+            <div class="checkout-field">
+              <input
+                id="address"
+                name="address"
+                type="text"
+                placeholder="Address"
+                aria-label="Address"
+                autocomplete="street-address"
+              />
+            </div>
+
+            <div class="checkout-field">
+              <input
+                id="city"
+                name="city"
+                type="text"
+                placeholder="City"
+                aria-label="City"
+                autocomplete="address-level2"
+              />
+            </div>
+
+            <div class="checkout-field address-row">
+              <input
+                id="state"
+                name="state"
+                type="text"
+                placeholder="State/Province"
+                aria-label="State/Province"
+                autocomplete="address-level1"
+              />
+              <input
+                id="postal-code"
+                name="postalCode"
+                type="text"
+                placeholder="Zip/Postal Code"
+                aria-label="Zip/Postal Code"
+                autocomplete="postal-code"
+              />
+            </div>
+
+            <div class="checkout-field country-field">
+              <label for="country">Country</label>
+              <select id="country" name="country" autocomplete="country-name">
+                <option value="US" selected>United States</option>
+                <option value="IN">India</option>
+                <option value="CA">Canada</option>
+                <option value="GB">United Kingdom</option>
+                <option value="AU">Australia</option>
+              </select>
+            </div>
+          </section>
+
+          <section class="checkout-section billing-section">
+            <h2>Billing Address</h2>
+
+            <label class="billing-checkbox">
+              <input type="checkbox" name="differentBilling" />
+              <span>Use different billing address</span>
+            </label>
+          </section>
+        </div>
+
+        <div class="checkout-right">
+          <section class="checkout-section payment-section">
+            <h2>Payment Method</h2>
+
+            <div class="checkout-field">
+              <input
+                id="cardholder"
+                name="cardholder"
+                type="text"
+                placeholder="Cardholder Name"
+                aria-label="Cardholder Name"
+                autocomplete="cc-name"
+              />
+            </div>
+
+            <div class="checkout-field">
+              <input
+                id="card-number"
+                name="cardNumber"
+                type="text"
+                inputmode="numeric"
+                placeholder="Card Number"
+                aria-label="Card Number"
+                autocomplete="cc-number"
+              />
+            </div>
+
+            <div class="expiry-row">
+              <div class="checkout-field expiry-month">
+                <label for="expiry-month">Expiry</label>
+                <select id="expiry-month" name="expiryMonth" autocomplete="cc-exp-month">
+                  <option value="01">Jan</option>
+                  <option value="02">Feb</option>
+                  <option value="03">Mar</option>
+                  <option value="04">Apr</option>
+                  <option value="05">May</option>
+                  <option value="06">Jun</option>
+                  <option value="07">Jul</option>
+                  <option value="08">Aug</option>
+                  <option value="09">Sep</option>
+                  <option value="10">Oct</option>
+                  <option value="11">Nov</option>
+                  <option value="12">Dec</option>
+                </select>
+              </div>
+
+              <div class="checkout-field expiry-year">
+                <select id="expiry-year" name="expiryYear" autocomplete="cc-exp-year">
+                  <option>2016</option>
+                  <option>2026</option>
+                  <option>2027</option>
+                  <option>2028</option>
+                  <option>2029</option>
+                  <option>2030</option>
+                  <option>2031</option>
+                </select>
+              </div>
+
+              <div class="checkout-field expiry-cvv">
+                <input
+                  id="cvv"
+                  name="cvv"
+                  type="password"
+                  inputmode="numeric"
+                  placeholder="CVV"
+                  autocomplete="cc-csc"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="checkout-section order-section">
+            <h2>Order Summary</h2>
+
+            <div class="order-items">
+              <div class="order-item">
+                <span>Men's Tech Shell Full-Zip</span>
+                <span>$50.20</span>
+              </div>
+
+              <div class="order-item">
+                <span>Anvil L/S Crew Neck - Grey</span>
+                <span>$22.15</span>
+              </div>
+            </div>
+
+            <div class="order-total">
+              <span>Total</span>
+              <span>$72.35</span>
+            </div>
+
+            <button class="place-order-button" type="submit">PLACE ORDER</button>
+          </section>
+        </div>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <a
+        class="footer-link"
+        target="_blank"
+        href="https://polymer-library.polymer-project.org/3.0/docs/apps/"
+        >Made by Polymer</a
+      >
+      <p class="footer-button">DEMO ONLY</p>
+    </footer>
+  </body>
+</html>

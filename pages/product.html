@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/shop-icon-32.png" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Men's Tech Shell Full-Zip - SHOP</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="header-top">
+        <a href="product-listing-page.html" class="back-link" aria-label="Back to products">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+        </a>
+
+        <a class="brand-title" href="../index.html" aria-label="SHOP Home">SHOP</a>
+
+        <a class="cart-link" href="cart.html" aria-label="Shopping cart: 2 items">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+            />
+          </svg>
+          <span class="cart-count" aria-hidden="true">2</span>
+        </a>
+      </div>
+
+      <!-- page navbar -->
+      <nav class="page-nav" aria-label="Main navigation">
+        <a class="active" href="product-listing-page.html">Men's Outerwear</a>
+        <a href="product-listing-page.html">Ladies Outerwear</a>
+        <a href="product-listing-page.html">Men's T-Shirts</a>
+        <a href="product-listing-page.html">Ladies T-Shirts</a>
+      </nav>
+    </header>
+
+    <main class="product-detail">
+      <div class="detail-image-container">
+        <img
+          class="detail-image"
+          src="../data/images/10-15068B.jpg"
+          alt="Men's Tech Shell Full-Zip"
+        />
+      </div>
+
+      <section class="detail-info">
+        <h1 class="detail-title">Men's Tech Shell Full-Zip</h1>
+
+        <p class="detail-price">$50.20</p>
+
+        <form id="product-form">
+          <label class="select-row">
+            <span>Size</span>
+            <select name="size" aria-label="Size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M" selected>M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+          </label>
+
+          <label class="select-row">
+            <span>Quantity</span>
+            <select name="quantity" aria-label="Quantity">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </label>
+
+          <div class="detail-description">
+            <h2>Description</h2>
+            <p>
+              A versatile full-zip that you can wear all day long and even to the gym. This
+              technical shell features moisture-wicking fabric, added stretch and a hidden pocket
+              for your smartphone or media player.
+            </p>
+            <p>Features:</p>
+            <ul>
+              <li>100% polyester.</li>
+              <li>Smooth, technical front with textured mesh back.</li>
+              <li>Drawstring bottom for adjustable fit.</li>
+              <li>Raglan sleeves.</li>
+              <li>
+                Available in forest green with the white Google logo embroidered at left chest.
+              </li>
+            </ul>
+          </div>
+        </form>
+      </section>
+
+      <div class="btn-container">
+        <button class="add-to-cart" type="submit" form="product-form">ADD TO CART</button>
+      </div>
+    </main>
+
+    <footer class="page-footer product-footer">
+      <a
+        class="footer-link"
+        target="_blank"
+        href="https://polymer-library.polymer-project.org/3.0/docs/apps/"
+        >Made by Polymer</a
+      >
+      <p class="footer-button">DEMO ONLY</p>
+    </footer>
+  </body>
+</html>
